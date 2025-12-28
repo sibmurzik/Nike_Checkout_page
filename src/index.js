@@ -1,2 +1,3 @@
 import './styles.css'
-//console.log('Happy developing ✨')
+import img from './assets/images/image_1.png';
+
