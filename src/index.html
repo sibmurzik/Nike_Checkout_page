@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Nike main page</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 </head>
-<body class="bg-white font-display font-medium text-black text-xs">
+<body class="bg-white font-display font-medium text-black text-xs leading-none">
 
 <aside class="hidden"></aside>
 <header class="flex justify-between items-center py-4 px-4 lg:px-7 xl:px-11 border-b-1 border-b-neutral-300">
@@ -68,10 +68,24 @@
 
 
 </header>
-<div class="container m-auto">
-    <main class="flex flex-col sm:flex-row items-start justify-center pt-10">
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<section class="container m-auto">
+    <main class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-3 pt-10 px-4">
+        <section class="flex flex-col w-full">
+            <h2 class="text-xl font-bold pb-2">Nike Air Force 1 ‘07</h2>
+            <p class="pb-5 text-[#737373]">Women’s Shoe</p>
+            <p>$115</p>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
             <div class="relative">
+                <div class="absolute inset-4 z-10 flex justify-evenly items-center w-28.5 h-6.5 rounded-[52px] bg-white">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.6775 14L3.815 8.82368L0 5.34211L5.04 4.88158L7 0L8.96 4.88158L14 5.34211L10.185 8.82368L11.3225 14L7 11.2553L2.6775 14Z"
+                              fill="black"/>
+                    </svg>
+                    <p class="pt-1">
+                        Highly Rated
+                    </p>
+                </div>
                 <img alt="sneakers 1" class="w-full h-full object-cover" src="assets/images/image_1.png">
             </div>
             <div class="relative">
@@ -85,11 +99,18 @@
             </div>
 
         </section>
-        <section>
-
+        <section class="flex flex-cols items-start gap-6 w-full">
+            <div class="flex  justify-start gap-2">
+                <img alt="color selector white" class="w-full h-full object-cover"
+                     src="assets/images/color_selector_white.png">
+                <img alt="color selector black" class="w-full h-full object-cover"
+                     src="assets/images/color_selector_black.png">
+            </div>
         </section>
 
     </main>
-</div>
+</section>
+
+
 </body>
 </html>
