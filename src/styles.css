@@ -18,5 +18,11 @@
 @theme {
     --color-search: #f7f7f7;
     --font-display: 'Helvetica', sans-serif;
+    --color-pale_border: #c1c1c1;
 }
 
+@layer components {
+    .size_selection {
+        @apply flex justify-center items-center py-2.5 border-1 border-pale_border rounded-sm cursor-pointer hover:border-black;
+    }
+}

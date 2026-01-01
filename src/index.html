@@ -69,16 +69,16 @@
 
 </header>
 <section class="container m-auto">
-    <main class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-3 pt-10 px-4">
+    <main class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-3 pt-10 pb-12 px-4">
         <section class="flex flex-col w-full">
             <h2 class="text-xl font-bold pb-2">Nike Air Force 1 ‘07</h2>
-            <p class="pb-5 text-[#737373]">Women’s Shoe</p>
+            <p class="pb-5 text-pale_text">Women’s Shoe</p>
             <p>$115</p>
         </section>
         <section class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
             <div class="relative">
                 <div class="absolute inset-4 z-10 flex justify-evenly items-center w-28.5 h-6.5 rounded-[52px] bg-white">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.6775 14L3.815 8.82368L0 5.34211L5.04 4.88158L7 0L8.96 4.88158L14 5.34211L10.185 8.82368L11.3225 14L7 11.2553L2.6775 14Z"
                               fill="black"/>
                     </svg>
@@ -99,17 +99,85 @@
             </div>
 
         </section>
-        <section class="flex flex-cols items-start gap-6 w-full">
-            <div class="flex  justify-start gap-2">
-                <img alt="color selector white" class="w-full h-full object-cover"
+        <section class="flex flex-col justify-center items-center gap-6 w-full">
+            <div class="self-start flex gap-2">
+                <img alt="color selector white" class="w-full h-full object-cover cursor-pointer"
                      src="assets/images/color_selector_white.png">
-                <img alt="color selector black" class="w-full h-full object-cover"
+                <img alt="color selector black" class="w-full h-full object-cover cursor-pointer"
                      src="assets/images/color_selector_black.png">
             </div>
+            <div class="flex justify-between w-full">
+                <p>Select Size</p>
+                <p class="text-neutral-500">Size Guide</p>
+            </div>
+            <div class="grid grid-cols-3 gap-2 -mt-4 w-full" id="sizes_table">
+                <div class="size_selection">EU 33</div>
+                <div class="size_selection">EU 33.5</div>
+                <div class="size_selection">EU 34</div>
+
+                <div class="size_selection">EU 34.5</div>
+                <div class="size_selection">EU 35</div>
+                <div class="size_selection">EU 35.5</div>
+
+                <div class="size_selection">EU 36</div>
+                <div class="size_selection">EU 36.5</div>
+                <div class="size_selection">EU 37</div>
+
+                <div class="size_selection">EU 37.5</div>
+                <div class="size_selection">EU 38</div>
+                <div class="size_selection">EU 38.5</div>
+
+                <div class="size_selection">EU 39</div>
+                <div class="size_selection">EU 39.5</div>
+                <div class="size_selection">EU 40</div>
+
+            </div>
+            <div class="flex flex-col gap-2 w-full">
+                <button class="w-full h-12 bg-[#111] text-white border rounded-[52px] cursor-pointer" id="add_to_bag">
+                    Add to Bag
+                </button>
+                <button class="flex justify-center items-center gap-1 w-full h-12 border-1 border-neutral-300 rounded-[52px] cursor-pointer"
+                        id="add_to_favorite">
+                    <span>Favorite</span>
+                    <svg class="pb-0.5" fill="none" height="18" viewBox="0 0 18 18" width="18"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6301 3.45753C15.247 3.07428 14.7922 2.77026 14.2916 2.56284C13.791 2.35542 13.2545 2.24866 12.7126 2.24866C12.1707 2.24866 11.6342 2.35542 11.1336 2.56284C10.633 2.77026 10.1782 3.07428 9.79509 3.45753L9.00009 4.25253L8.20509 3.45753C7.43132 2.68376 6.38186 2.24906 5.28759 2.24906C4.19331 2.24906 3.14386 2.68376 2.37009 3.45753C1.59632 4.2313 1.16162 5.28075 1.16162 6.37503C1.16162 7.4693 1.59632 8.51876 2.37009 9.29253L3.16509 10.0875L9.00009 15.9225L14.8351 10.0875L15.6301 9.29253C16.0133 8.90946 16.3174 8.45464 16.5248 7.95404C16.7322 7.45345 16.839 6.91689 16.839 6.37503C16.839 5.83316 16.7322 5.2966 16.5248 4.79601C16.3174 4.29542 16.0133 3.84059 15.6301 3.45753V3.45753Z"
+                              stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    </svg>
+
+
+                </button>
+            </div>
+            <div class="flex flex-col gap-6 w-full">
+                <div>
+                    <h2 class="font-bold pb-2">Shipping</h2>
+                    <p>You'll see our shipping options at checkout.</p>
+                </div>
+                <p class="-mb-1">
+                    The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what
+                    you know best: crisp leather, bold colors and the perfect amount of flash to make you shine. A
+                    subtle platform gives you just the right amount of height.
+                </p>
+                <ul class=" list-disc list-inside indent-1">
+                    <li>Shown: White/White/White/White</li>
+                    <li>Style: DD8959-100</li>
+                </ul>
+                <a class="font-bold underline" href="#">
+                    View Product Details
+                </a>
+
+
+            </div>
+
         </section>
 
     </main>
 </section>
+<footer class="flex justify-center py-8">
+    <p class="text-neutral-500">
+        © 2025 Nike, Inc. All Rights Reserved
+    </p>
+</footer>
 
 
 </body>
