@@ -26,3 +26,11 @@
         @apply flex justify-center items-center py-2.5 border-1 border-pale_border rounded-sm cursor-pointer hover:border-black;
     }
 }
+
+
+@layer utilities {
+    .list-disc {
+        list-style: disc;
+    }
+}
+
