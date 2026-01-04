@@ -5,87 +5,101 @@
     <title>Nike main page</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 </head>
-<body class="bg-white font-display font-medium text-black text-xs leading-none">
+<body class="relative bg-white font-display font-medium text-black text-xs leading-none">
 
-<aside class="hidden"></aside>
-<header class="flex justify-between items-center py-4 px-4 lg:px-7 xl:px-11 border-b-1 border-b-neutral-300">
-    <svg fill="none" height="21" viewBox="0 0 60 21" width="60" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_3_303)">
-            <path d="M59.6215 0L16.0032 18.5743C12.3858 20.1048 9.34802 20.87 6.89 20.87C4.10733 20.87 2.0899 19.8961 0.837699 17.9482C0.0492763 16.696 -0.182612 15.1076 0.142032 13.1829C0.466676 11.2582 1.32467 9.20599 2.716 7.02623C3.87544 5.26388 5.77693 2.94499 8.42047 0.0695666C7.49291 1.55366 6.84362 3.08412 6.4726 4.66097C5.77693 7.62914 6.40303 9.8089 8.3509 11.2002C9.27845 11.8495 10.5538 12.1742 12.1771 12.1742C13.4756 12.1742 14.9365 11.9655 16.5598 11.5481L59.6215 0Z"
+<aside id="mobile_menu" class="z-20 fixed h-full right-0 top-0 hidden md:hidden  w-44.5 px-4 pt-12 bg-white">
+    <div id="close_menu" class="absolute top-4 right-4 cursor-pointer hover:opacity-75">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.2548 2.75489C12.5282 2.48153 12.9717 2.48153 13.2451 2.75489C13.5184 3.02826 13.5184 3.47176 13.2451 3.74513L8.9902 8.00001L13.2451 12.2549L13.3349 12.3652C13.514 12.6369 13.4841 13.006 13.2451 13.2451C13.006 13.4842 12.6368 13.5141 12.3652 13.335L12.2548 13.2451L7.99995 8.99021L3.74506 13.2451C3.4717 13.5185 3.0282 13.5185 2.75483 13.2451C2.48146 12.9718 2.48146 12.5282 2.75483 12.2549L7.00971 8.00001L2.75483 3.74513L2.66499 3.63478C2.48589 3.36311 2.51575 2.99397 2.75483 2.75489C2.99391 2.51582 3.36305 2.48595 3.63471 2.66505L3.74506 2.75489L7.99995 7.00978L12.2548 2.75489Z"
                   fill="black"/>
-        </g>
-        <defs>
-            <clipPath id="clip0_3_303">
-                <rect fill="white" height="20.87" width="59.6186"/>
-            </clipPath>
-        </defs>
-    </svg>
-    <nav class="hidden sm:flex justify-between align-middle w-63">
+        </svg>
+    </div>
+    <nav class="flex flex-col  justify-start items-start gap-6">
         <a href="#">Men</a>
         <a href="#">Women</a>
         <a href="#">Kids</a>
         <a href="#">Jordan</a>
         <a href="#">Sale</a>
     </nav>
-    <nav class="flex justify-between items-center w-59 sm:w-51">
-        <div class="flex justify-start items-center pr-3 py-1 w-34 h-[26px] rounded-4xl bg-(--color-search)">
-            <div class="px-2">
-                <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
-                          stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                    <path d="M15.75 15.75L12.4875 12.4875" stroke="black" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="1.5"/>
+
+</aside>
+
+<section class="fixed z-10 w-full border-b-1 border-b-neutral-300">
+    <header class="z-10 flex justify-between items-center max-w-[1280px] m-auto py-4 px-4 lg:px-7 xl:px-11 bg-white ">
+
+        <svg fill="none" height="21" viewBox="0 0 60 21" width="60" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3_303)">
+                <path d="M59.6215 0L16.0032 18.5743C12.3858 20.1048 9.34802 20.87 6.89 20.87C4.10733 20.87 2.0899 19.8961 0.837699 17.9482C0.0492763 16.696 -0.182612 15.1076 0.142032 13.1829C0.466676 11.2582 1.32467 9.20599 2.716 7.02623C3.87544 5.26388 5.77693 2.94499 8.42047 0.0695666C7.49291 1.55366 6.84362 3.08412 6.4726 4.66097C5.77693 7.62914 6.40303 9.8089 8.3509 11.2002C9.27845 11.8495 10.5538 12.1742 12.1771 12.1742C13.4756 12.1742 14.9365 11.9655 16.5598 11.5481L59.6215 0Z"
+                      fill="black"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_3_303">
+                    <rect fill="white" height="20.87" width="59.6186"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <nav class="hidden sm:flex justify-between align-middle w-63">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Jordan</a>
+            <a href="#">Sale</a>
+        </nav>
+        <nav class="relative flex justify-end  items-center gap-4 w-59  sm:w-51 ">
+            <div class="absolute left-0 flex justify-start items-center pr-3 py-1 w-34 hover:w-64 hover:-left-30 h-[26px] rounded-4xl bg-(--color-search)">
+                <div class="px-2">
+                    <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        <path d="M15.75 15.75L12.4875 12.4875" stroke="black" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div>
+                    <input class="w-full placeholder-neutral-300" placeholder="Search" type="search"/>
+                </div>
+
+
+            </div>
+
+            <svg id="favorite_in_header" class="fill-none" height="18" viewBox="0 0 18 18" width="18"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.63 3.4575C15.2469 3.07425 14.7921 2.77023 14.2915 2.56281C13.7909 2.35539 13.2543 2.24863 12.7125 2.24863C12.1706 2.24863 11.634 2.35539 11.1335 2.56281C10.6329 2.77023 10.178 3.07425 9.79497 3.4575L8.99997 4.2525L8.20497 3.4575C7.4312 2.68373 6.38174 2.24903 5.28747 2.24903C4.19319 2.24903 3.14374 2.68373 2.36997 3.4575C1.5962 4.23127 1.1615 5.28072 1.1615 6.375C1.1615 7.46927 1.5962 8.51873 2.36997 9.2925L3.16497 10.0875L8.99997 15.9225L14.835 10.0875L15.63 9.2925C16.0132 8.90943 16.3172 8.45461 16.5247 7.95402C16.7321 7.45342 16.8388 6.91687 16.8388 6.375C16.8388 5.83313 16.7321 5.29658 16.5247 4.79598C16.3172 4.29539 16.0132 3.84057 15.63 3.4575V3.4575Z"
+                      stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            </svg>
+            <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 1.5L2.25 4.5V15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C14.6478 16.5 15.0294 16.342 15.3107 16.0607C15.592 15.7794 15.75 15.3978 15.75 15V4.5L13.5 1.5H4.5Z"
+                      stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                <path d="M2.25 4.5H15.75" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.5"/>
+                <path d="M12 7.5C12 8.29565 11.6839 9.05871 11.1213 9.62132C10.5587 10.1839 9.79565 10.5 9 10.5C8.20435 10.5 7.44129 10.1839 6.87868 9.62132C6.31607 9.05871 6 8.29565 6 7.5"
+                      stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            </svg>
+
+            <div class="block sm:hidden" id="open_menu">
+                <svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.3337 12.6686L8.199 12.6823C7.8962 12.7445 7.6687 13.0125 7.6687 13.3337C7.6689 13.6547 7.8962 13.9229 8.199 13.985L8.3337 13.9987H16.6667C17.0339 13.9987 17.3316 13.7008 17.3318 13.3337C17.3318 12.9664 17.034 12.6686 16.6667 12.6686H8.3337ZM3.3337 6.00163L3.199 6.0153C2.8962 6.07747 2.6687 6.34546 2.6687 6.66667C2.6687 6.98788 2.8962 7.25586 3.199 7.31803L3.3337 7.33171H16.6667C17.034 7.33171 17.3318 7.03394 17.3318 6.66667C17.3318 6.2994 17.034 6.00163 16.6667 6.00163H3.3337Z"
+                          fill="black"/>
                 </svg>
             </div>
-            <div>
-                <input class="w-full placeholder-neutral-300" placeholder="Search" type="search"/>
-            </div>
 
 
-        </div>
-
-        <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.63 3.4575C15.2469 3.07425 14.7921 2.77023 14.2915 2.56281C13.7909 2.35539 13.2543 2.24863 12.7125 2.24863C12.1706 2.24863 11.634 2.35539 11.1335 2.56281C10.6329 2.77023 10.178 3.07425 9.79497 3.4575L8.99997 4.2525L8.20497 3.4575C7.4312 2.68373 6.38174 2.24903 5.28747 2.24903C4.19319 2.24903 3.14374 2.68373 2.36997 3.4575C1.5962 4.23127 1.1615 5.28072 1.1615 6.375C1.1615 7.46927 1.5962 8.51873 2.36997 9.2925L3.16497 10.0875L8.99997 15.9225L14.835 10.0875L15.63 9.2925C16.0132 8.90943 16.3172 8.45461 16.5247 7.95402C16.7321 7.45342 16.8388 6.91687 16.8388 6.375C16.8388 5.83313 16.7321 5.29658 16.5247 4.79598C16.3172 4.29539 16.0132 3.84057 15.63 3.4575V3.4575Z"
-                  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-        </svg>
-        <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 1.5L2.25 4.5V15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C14.6478 16.5 15.0294 16.342 15.3107 16.0607C15.592 15.7794 15.75 15.3978 15.75 15V4.5L13.5 1.5H4.5Z"
-                  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-            <path d="M2.25 4.5H15.75" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-            <path d="M12 7.5C12 8.29565 11.6839 9.05871 11.1213 9.62132C10.5587 10.1839 9.79565 10.5 9 10.5C8.20435 10.5 7.44129 10.1839 6.87868 9.62132C6.31607 9.05871 6 8.29565 6 7.5"
-                  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-        </svg>
-
-        <div class="block sm:hidden" id="openMenu">
-            <svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.3337 12.6686L8.199 12.6823C7.8962 12.7445 7.6687 13.0125 7.6687 13.3337C7.6689 13.6547 7.8962 13.9229 8.199 13.985L8.3337 13.9987H16.6667C17.0339 13.9987 17.3316 13.7008 17.3318 13.3337C17.3318 12.9664 17.034 12.6686 16.6667 12.6686H8.3337ZM3.3337 6.00163L3.199 6.0153C2.8962 6.07747 2.6687 6.34546 2.6687 6.66667C2.6687 6.98788 2.8962 7.25586 3.199 7.31803L3.3337 7.33171H16.6667C17.034 7.33171 17.3318 7.03394 17.3318 6.66667C17.3318 6.2994 17.034 6.00163 16.6667 6.00163H3.3337Z"
-                      fill="black"/>
-            </svg>
-        </div>
+        </nav>
 
 
-    </nav>
+    </header>
+</section>
 
-
-</header>
-<section class="container m-auto">
-    <main class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-3 pt-10 pb-12 px-4">
-        <section class="flex flex-col w-full">
-            <h2 class="text-xl font-bold pb-2">Nike Air Force 1 ‘07</h2>
-            <p class="pb-5 text-pale_text">Women’s Shoe</p>
+<section class="max-w-[1280px]  m-auto pt-24.5 md:pt-34 lg:pt-47">
+    <main class="flex flex-col items-center sm:grid grid-cols-[1.05fr_0.95fr] md:grid-cols-[1.4fr_0.6fr]  sm:grid-rows-[64px] sm:items-start justify-center w-full gap-3 sm:gap-6  pb-12 px-4">
+        <section class="flex flex-col w-full sm:order-2 sm:col-start-2 sm:row-start-1">
+            <h2 class="text-[16px] font-bold pb-2">Nike Air Force 1 ‘07</h2>
+            <p class="pb-4 text-pale_text">Women’s Shoe</p>
             <p>$115</p>
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
-            <div class="relative">
-                <div class="absolute inset-4 z-10 flex justify-evenly items-center w-28.5 h-6.5 rounded-[52px] bg-white">
-                    <svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.6775 14L3.815 8.82368L0 5.34211L5.04 4.88158L7 0L8.96 4.88158L14 5.34211L10.185 8.82368L11.3225 14L7 11.2553L2.6775 14Z"
-                              fill="black"/>
-                    </svg>
-                    <p class="pt-1">
-                        Highly Rated
-                    </p>
-                </div>
+        <section class="grid grid-cols-1 md:grid-cols-2 sm:row-span-2 gap-3 w-full">
+            <div class="highly-rated relative">
                 <img alt="sneakers 1" class="w-full h-full object-cover" src="assets/images/image_1.png">
             </div>
             <div class="relative">
@@ -99,7 +113,7 @@
             </div>
 
         </section>
-        <section class="flex flex-col justify-center items-center gap-6 w-full">
+        <section class="flex flex-col justify-center items-center gap-6 w-full sm:col-start-2 sm:row-start-2">
             <div class="self-start flex gap-2">
                 <img alt="color selector white" class="w-full h-full object-cover cursor-pointer"
                      src="assets/images/color_selector_white.png">
@@ -139,7 +153,7 @@
                 <button class="flex justify-center items-center gap-1 w-full h-12 border-1 border-neutral-300 rounded-[52px] cursor-pointer"
                         id="add_to_favorite">
                     <span>Favorite</span>
-                    <svg class="pb-0.5" fill="none" height="18" viewBox="0 0 18 18" width="18"
+                    <svg id="favorite_icon" class="pb-0.5 fill-none" height="18" viewBox="0 0 18 18" width="18"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.6301 3.45753C15.247 3.07428 14.7922 2.77026 14.2916 2.56284C13.791 2.35542 13.2545 2.24866 12.7126 2.24866C12.1707 2.24866 11.6342 2.35542 11.1336 2.56284C10.633 2.77026 10.1782 3.07428 9.79509 3.45753L9.00009 4.25253L8.20509 3.45753C7.43132 2.68376 6.38186 2.24906 5.28759 2.24906C4.19331 2.24906 3.14386 2.68376 2.37009 3.45753C1.59632 4.2313 1.16162 5.28075 1.16162 6.37503C1.16162 7.4693 1.59632 8.51876 2.37009 9.29253L3.16509 10.0875L9.00009 15.9225L14.8351 10.0875L15.6301 9.29253C16.0133 8.90946 16.3174 8.45464 16.5248 7.95404C16.7322 7.45345 16.839 6.91689 16.839 6.37503C16.839 5.83316 16.7322 5.2966 16.5248 4.79601C16.3174 4.29542 16.0133 3.84059 15.6301 3.45753V3.45753Z"
                               stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
@@ -159,10 +173,10 @@
                     subtle platform gives you just the right amount of height.
                 </p>
                 <div class="pl-2 leading-4">
-                <ul class="list-disc  list-inside pl-2 ">
-                    <li>Shown: White/White/White/White</li>
-                    <li>Style: DD8959-100</li>
-                </ul>
+                    <ul class="list-disc  list-inside pl-2 ">
+                        <li>Shown: White/White/White/White</li>
+                        <li>Style: DD8959-100</li>
+                    </ul>
                 </div>
                 <a class="font-bold underline" href="#">
                     View Product Details
@@ -175,7 +189,7 @@
 
     </main>
 </section>
-<footer class="flex justify-center py-8">
+<footer class="flex lg:hidden justify-center py-8">
     <p class="text-neutral-500">
         © 2025 Nike, Inc. All Rights Reserved
     </p>
